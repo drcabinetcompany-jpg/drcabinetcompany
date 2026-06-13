@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DR SOUND AND CABINET COMPANY</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+
+</div>
+<header class="navbar">
+
+<div class="logo">
+<img src="logo.jpeg" alt="Logo">
+</div>
+
+<nav>
+<a href="#">HOME</a>
+<a href="#">PRODUCTS</a>
+<a href="#">EVENTS</a>
+<a href="#">OUR AIM</a>
+</nav>
+<a href="founder.html" class="founder-nav-btn">
+
+<img src="about.jpg" alt="Founder">
+
+<span>Meet The Founder</span>
+
+</a>
+
+<a href="#contact" class="partner-btn">
+CONTACT US
+</a>
+<a href="#about" class="partner-btn">
+ABOUT
+</a>
+</header>
+
+
+<section class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>
+<span class="red">ENGINEERED</span>
+FOR <br>
+EXTREME <br>
+PERFORMANCE.
+</h1>
+
+<p>NEXT-GEN SOUND PERFORMANCE.</p>
+<p>BUILD FOR QUALITY</p>
+</div>
+
+</section>
+<section class="running-text">
+
+<div class="track">
+
+<span>EXCELLENCE</span>
+<span>•</span>
+<span>BUILD FOR QUALITY</span>
+<span>•</span>
+<span>ACOUSTIC EXCELLENCE</span>
+<span>•</span>
+<span>MADE IN INDIA</span>
+<span>•</span>
+<span>DR SOUND COMPANY</span>
+<span>•</span>
+<span>RATHOD APPA</span>
+<span>•</span>
+<span>PREMIUM QUALITY</span>
+<span>•</span>
+
+<span>EXCELLENCE</span>
+<span>•</span>
+<span>BUILD FOR QUALITY</span>
+<span>•</span>
+<span>ACOUSTIC EXCELLENCE</span>
+<span>•</span>
+<span>MADE IN INDIA</span>
+<span>•</span>
+<span>DR SOUND COMPANY</span>
+<span>•</span>
+<span>RATHOD APPA</span>
+<span>•</span>
+<span>PREMIUM QUALITY</span>
+<span>•</span>
+</div>
+
+</section>
+<!-- PRODUCTS -->
+<section class="products container">
+  <h2>Our Products</h2>
+
+  <div class="grid">
+
+    <div class="box">
+      <img src="about.jpg1.png">
+      <h3>Sound Cabinets</h3>
+    </div>
+
+    <div class="box">
+      <img src="about.jpg">
+      <h3>Amplifiers</h3>
+    </div>
+
+    <div class="box">
+      <img src="about.jpg">
+      <h3>Customised Systems</h3>
+    </div>
+
+  </div>
+</section>
+<section class="gallery-section">
+
+<h2>Our Work Gallery</h2>
+
+<div class="gallery-wrapper">
+
+<button class="arrow left" onclick="scrollGallery(-1)">&#10094;</button>
+
+<div class="gallery" id="gallery">
+
+<img src="gallery1.jpeg" onclick="openImage(this.src)">
+<img src="gallery2.jpeg" onclick="openImage(this.src)">
+<img src="gallery3.jpeg" onclick="openImage(this.src)">
+<img src="gallery4.jpeg" onclick="openImage(this.src)">
+<img src="gallery5.jpeg" onclick="openImage(this.src)">
+
+</div>
+
+<button class="arrow right" onclick="scrollGallery(1)">&#10095;</button>
+
+</div>
+
+</section>
+<!-- ABOUT -->
+<section id="about" class="about-section">
+
+<div class="about-left">
+
+<p class="small-title">ABOUT DR SOUND COMPANY</p>
+
+<h2>
+Crafting Premium Sound Systems <br>
+Built For <span>Performance</span>
+</h2>
+
+<p class="about-text">
+Founded by Rahul Rathod, DR Sound & Cabinet Company has been manufacturing premium-quality professional sound systems and cabinets since 2014.
+
+We focus on performance, durability, acoustic excellence, and customized sound solutions designed for powerful real-world performance.
+</p>
+
+<div class="about-features">
+
+<div>✔ Premium Build Quality</div>
+<div>✔ Custom Sound Solutions</div>
+<div>✔ Since 2014 Manufacturing</div>
+<div class="about-right">
+</div>
+
+</section>
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+
+<div class="contact-left">
+
+<h1>Get In <span>Touch</span></h1>
+
+<p>
+Connect with our engineering team for premium sound system solutions.
+</p>
+
+<div class="info-box">
+<h3>PHONE</h3>
+<p>+91 9373483287</p>
+</div>
+
+<div class="info-box">
+<h3>EMAIL</h3>
+<p>drcabinet@gmail.com</p>
+</div>
+
+<div class="info-box">
+<h3>LOCATION</h3>
+<p>South Solapur, Maharashtra, India</p>
+</div>
+
+</div>
+
+<div class="contact-right">
+
+<form id="contactForm">
+
+<input type="text" id="name" placeholder="Full Name" required>
+
+<input type="email" id="email" placeholder="Email Address" required>
+
+<input type="text" id="phone" placeholder="Phone Number" required>
+
+<input type="text" id="project" placeholder="Project Type">
+
+<textarea id="message" placeholder="Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+</div>
+
+</section>
+<footer>
+  <p>© Since 2012 DR SOUNDS AND CABINET COMPANY. All rights reserved.</p>
+</footer>
+<a href="https://wa.me/919373483287" class="whatsapp-float" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="30">
+</a>
+<a href="https://maps.google.com/?q=17.566535,75.979115"
+class="map-float"
+target="_blank">
+
+<img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" width="35">
+
+</a>
+
+<script>
+
+function scrollGallery(direction){
+
+const gallery = document.getElementById("gallery");
+
+gallery.scrollBy({
+left: direction * 320,
+behavior: "smooth"
+});
+
+}
+
+</script>
+<div id="popup" class="popup" onclick="closeImage()">
+<img id="popup-img">
+</div>
+<script>
+
+function openImage(src){
+document.getElementById("popup").style.display="flex";
+document.getElementById("popup-img").src=src;
+}
+
+function closeImage(){
+document.getElementById("popup").style.display="none";
+}
+
+</script>
+<script>
+
+document.getElementById("contactForm").onsubmit = function(e){
+
+e.preventDefault();
+
+let name = document.querySelector('input[placeholder="Full Name"]').value;
+let email = document.querySelector('input[placeholder="Email Address"]').value;
+let phone = document.querySelector('input[placeholder="Phone Number"]').value;
+let project = document.querySelector('input[placeholder="Project Type"]').value;
+let message = document.querySelector('textarea').value;
+
+let text =
+"New Website Inquiry\n\n" +
+"Name: " + name + "\n" +
+"Email: " + email + "\n" +
+"Phone: " + phone + "\n" +
+"Project: " + project + "\n" +
+"Message: " + message;
+
+let encodedText = encodeURIComponent(text);
+
+window.location.href =
+"https://wa.me/919373483287?text=" + encodedText; 
+"https://wa.me/917619359109?text=" + encodedText;
+};
+
+</script>
