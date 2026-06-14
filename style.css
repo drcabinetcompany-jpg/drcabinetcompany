@@ -805,3 +805,196 @@ font-size:13px;
 }
 
 }
+/* =========================
+   MOBILE RESPONSIVE FIX
+========================= */
+
+@media screen and (max-width:768px){
+
+body{
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+.navbar{
+flex-direction:column;
+height:auto;
+padding:15px;
+gap:15px;
+text-align:center;
+}
+
+.logo img{
+width:80px;
+}
+
+nav{
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
+nav a{
+margin:0;
+font-size:18px;
+}
+
+.nav-right{
+display:flex;
+flex-direction:column;
+gap:12px;
+align-items:center;
+}
+
+.partner-btn,
+.founder-btn{
+width:220px;
+padding:14px;
+font-size:16px;
+}
+
+/* HERO SECTION */
+
+.hero{
+padding:180px 20px 80px;
+height:auto;
+text-align:center;
+}
+
+.hero-content h1{
+font-size:42px;
+line-height:1.1;
+word-break:break-word;
+}
+
+.hero-content p{
+font-size:16px;
+letter-spacing:2px;
+}
+
+/* RUNNING TEXT */
+
+.running-text{
+padding:15px 0;
+}
+
+.track span{
+font-size:26px;
+margin-right:20px;
+}
+
+.track span:nth-child(even){
+font-size:18px;
+}
+
+/* PRODUCTS */
+
+.grid{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:20px;
+}
+
+.box{
+width:95%;
+}
+
+/* ABOUT */
+
+.about{
+padding:50px 20px;
+text-align:center;
+}
+
+.about h2{
+font-size:32px;
+}
+
+.about p{
+font-size:16px;
+line-height:1.8;
+}
+
+/* GALLERY */
+
+.gallery{
+overflow-x:auto;
+scroll-snap-type:x mandatory;
+}
+
+.gallery img{
+width:260px;
+height:180px;
+}
+
+/* CONTACT SECTION */
+
+.contact-section{
+flex-direction:column;
+padding:40px 20px;
+gap:30px;
+}
+
+.contact-left,
+.contact-right{
+width:100%;
+}
+
+.contact-right form{
+width:100%;
+}
+
+.contact-right input,
+.contact-right textarea{
+width:100%;
+font-size:16px;
+padding:15px;
+}
+
+.contact-right button{
+width:100%;
+padding:15px;
+}
+
+/* FOUNDER POPUP */
+
+.founder-popup-content{
+flex-direction:column;
+width:95%;
+height:auto;
+overflow-y:auto;
+}
+
+.founder-popup-left img{
+width:100%;
+height:auto;
+}
+
+.founder-popup-right{
+padding:20px;
+}
+
+.founder-popup-right h1{
+font-size:38px;
+line-height:1.1;
+}
+
+/* FLOAT BUTTONS */
+
+.whatsapp-float{
+right:15px;
+bottom:20px;
+width:55px;
+height:55px;
+}
+
+.map-float{
+right:15px;
+bottom:90px;
+width:55px;
+height:55px;
+}
+
+}
